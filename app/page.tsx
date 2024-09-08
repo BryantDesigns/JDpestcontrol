@@ -22,7 +22,7 @@ export default function Home() {
             {/* Logo and Text */}
             <div className="relative h-64 w-[90%] sm:h-96 sm:w-[75%] md:h-[500px] lg:h-[600px]">
                 <Image
-                    alt="J & D Pest Control"
+                    alt="J & D Pest Control Logo"
                     src={logo}
                     layout="intrinsic"
                     className="rounded-lg"
