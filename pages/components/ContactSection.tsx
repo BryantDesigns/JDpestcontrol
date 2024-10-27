@@ -1,8 +1,5 @@
-import {
-    // BuildingOffice2Icon,
-    EnvelopeIcon,
-    PhoneIcon,
-} from '@heroicons/react/24/outline'
+// pages/contact.tsx
+import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline'
 
 export default function ContactSection() {
     return (
@@ -20,20 +17,6 @@ export default function ContactSection() {
                             questions you may have.
                         </p>
                         <dl className="mt-10 space-y-4 text-base leading-7 text-gray-600">
-                            {/* <div className="flex gap-x-4">
-                                <dt className="flex-none">
-                                    <span className="sr-only">Address</span>
-                                    <BuildingOffice2Icon
-                                        aria-hidden="true"
-                                        className="h-7 w-6 text-gray-400"
-                                    />
-                                </dt>
-                                <dd>
-                                    123 Pest Control St.
-                                    <br />
-                                    Albuquerque, NM
-                                </dd>
-                            </div> */}
                             <div className="flex gap-x-4">
                                 <dt className="flex-none">
                                     <span className="sr-only">Telephone</span>
@@ -74,11 +57,11 @@ export default function ContactSection() {
 
                 {/* Contact Form Section */}
                 <form
-                    name="contact" // The name of your form (required by Netlify)
+                    name="contact"
                     method="POST"
                     data-netlify="true"
-                    netlify-honeypot="bot-field" // Optional honeypot field for spam protection
-                    action="/thank-you" // Redirect to this page after submission (optional)
+                    netlify-honeypot="bot-field"
+                    action="/thank-you"
                     className="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48"
                 >
                     {/* Netlify form hidden input */}
@@ -105,7 +88,7 @@ export default function ContactSection() {
                                         type="text"
                                         autoComplete="given-name"
                                         required
-                                        className="focus:ring-jdpestcontrol-500 block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6"
+                                        className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-jdpestcontrol-500 sm:text-sm sm:leading-6"
                                     />
                                 </div>
                             </div>
@@ -123,7 +106,7 @@ export default function ContactSection() {
                                         type="text"
                                         autoComplete="family-name"
                                         required
-                                        className="focus:ring-jdpestcontrol-500 block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6"
+                                        className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-jdpestcontrol-500 sm:text-sm sm:leading-6"
                                     />
                                 </div>
                             </div>
@@ -141,7 +124,7 @@ export default function ContactSection() {
                                         type="email"
                                         autoComplete="email"
                                         required
-                                        className="focus:ring-jdpestcontrol-500 block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6"
+                                        className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-jdpestcontrol-500 sm:text-sm sm:leading-6"
                                     />
                                 </div>
                             </div>
@@ -159,7 +142,7 @@ export default function ContactSection() {
                                         type="tel"
                                         autoComplete="tel"
                                         required
-                                        className="focus:ring-jdpestcontrol-500 block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6"
+                                        className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-jdpestcontrol-500 sm:text-sm sm:leading-6"
                                     />
                                 </div>
                             </div>
@@ -176,7 +159,7 @@ export default function ContactSection() {
                                         name="message"
                                         rows={4}
                                         required
-                                        className="focus:ring-jdpestcontrol-500 block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6"
+                                        className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-jdpestcontrol-500 sm:text-sm sm:leading-6"
                                     />
                                 </div>
                             </div>
@@ -184,7 +167,7 @@ export default function ContactSection() {
                         <div className="mt-8 flex justify-end">
                             <button
                                 type="submit"
-                                className="bg-jdpestcontrol-500 hover:bg-jdpestcontrol-600 focus-visible:outline-jdpestcontrol-500 rounded-md px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+                                className="rounded-md bg-jdpestcontrol-500 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-jdpestcontrol-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-jdpestcontrol-500"
                             >
                                 Send message
                             </button>
