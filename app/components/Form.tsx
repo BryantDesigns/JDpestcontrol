@@ -15,12 +15,17 @@ export default function ContactForm() {
             const form = event.target as HTMLFormElement
             const formData = new FormData(form)
 
-            const response = await fetch('/', {
+            const response = await fetch('/__forms.html', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/x-www-form-urlencoded',
                 },
-                body: new URLSearchParams(Array.from(formData.entries()).map(([key, value]) => [key, value.toString()])).toString(),
+                body: new URLSearchParams(
+                    Array.from(formData.entries()).map(([key, value]) => [
+                        key,
+                        value.toString(),
+                    ])
+                ).toString(),
             })
 
             if (response.ok) {
