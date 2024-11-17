@@ -173,9 +173,14 @@ export default function ContactSection() {
                         <div className="mt-8 flex justify-end">
                             <button
                                 type="submit"
-                                className="rounded-md bg-jdpestcontrol-500 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-jdpestcontrol-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-jdpestcontrol-500"
+                                onClick={handleSubmit}
+                                className={`rounded-md ${
+                                    loading
+                                        ? 'cursor-not-allowed bg-gray-400'
+                                        : 'bg-jdpestcontrol-500'
+                                } px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-jdpestcontrol-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-jdpestcontrol-500`}
                             >
-                                Send message
+                                {loading ? 'Sending...' : 'Send message'}
                             </button>
                         </div>
                     </div>
