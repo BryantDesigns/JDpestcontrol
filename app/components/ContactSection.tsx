@@ -85,7 +85,6 @@ export default function ContactSection() {
                     method="POST"
                     data-netlify="true"
                     netlify-honeypot="bot-field"
-                    action="/thank-you"
                     className="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48"
                 >
                     <input type="hidden" name="form-name" value="contact" />
