@@ -1,4 +1,4 @@
-import { BugAntIcon, NoSymbolIcon,  } from '@heroicons/react/24/outline'
+import { BugAntIcon, NoSymbolIcon, HomeIcon, BuildingOffice2Icon, MagnifyingGlassIcon, ShieldExclamationIcon} from '@heroicons/react/24/outline'
 
 const services = [
     {
@@ -20,7 +20,25 @@ const services = [
         description:
             'Our herbicide program offers full property treatment in spring and fall to eliminate weeds and prevent new growth.',
         href: '#',
-        icon: NoSymbolIcon,
+        icon: ShieldExclamationIcon,
+    },
+    {
+        name: 'Termite Inspections',
+        description:
+            'Protect your home with thorough termite inspections. Our expert team identifies infestations and provides effective solutions to safeguard your property.',
+        icon: MagnifyingGlassIcon,
+    },
+    {
+        name: 'Residential Pest Control',
+        description:
+            'Comprehensive pest control solutions for your home. Safe and effective treatments to keep your living spaces pest-free.',
+        icon: HomeIcon,
+    },
+    {
+        name: 'Commercial Pest Control',
+        description:
+            'Professional pest management services tailored for businesses. Maintain a clean and pest-free environment for your customers and employees.',
+        icon: BuildingOffice2Icon,
     },
 ]
 
