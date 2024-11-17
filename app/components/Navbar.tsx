@@ -140,7 +140,7 @@ export default function Navbar() {
                         </div>
                     </div>
                 </div>
-                <div className="bg-gray-50 md:hidden lg:absolute lg:inset-y-0 lg:right-0 lg:block lg:w-1/2">
+                <div className="hidden bg-gray-50 lg:absolute lg:inset-y-0 lg:right-0 lg:block lg:w-1/2">
                     <Image
                         alt=""
                         src={bannerImage}
