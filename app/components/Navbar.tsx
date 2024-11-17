@@ -42,7 +42,7 @@ export default function Navbar() {
                             <button
                                 type="button"
                                 onClick={() => setMobileMenuOpen(true)}
-                                className="-m-2.5 rounded-md p-2.5 text-gray-700 lg:hidden"
+                                className="0.375rem rounded-md p-2.5 text-gray-700 lg:hidden"
                             >
                                 <span className="sr-only">Open main menu</span>
                                 <Bars3Icon
