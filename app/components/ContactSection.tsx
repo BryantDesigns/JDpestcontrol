@@ -1,5 +1,5 @@
 'use client'
-import { useState } from 'react'
+// import { useState } from 'react'
 import {
     BuildingOffice2Icon,
     EnvelopeIcon,
@@ -7,11 +7,11 @@ import {
 } from '@heroicons/react/24/outline'
 
 export default function ContactSection() {
-    const [loading, setLoading] = useState(false)
+    // const [loading, setLoading] = useState(false)
 
-    const handleSubmit = () => {
-        setLoading(true)
-    }
+    // const handleSubmit = () => {
+    //     setLoading(true)
+    // }
     return (
         <div className="relative isolate bg-white">
             <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
@@ -173,14 +173,9 @@ export default function ContactSection() {
                         <div className="mt-8 flex justify-end">
                             <button
                                 type="submit"
-                                onClick={handleSubmit}
-                                className={`rounded-md ${
-                                    loading
-                                        ? 'cursor-not-allowed bg-gray-400'
-                                        : 'bg-jdpestcontrol-500'
-                                } px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-jdpestcontrol-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-jdpestcontrol-500`}
+                                className="rounded-md bg-jdpestcontrol-500 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-jdpestcontrol-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-jdpestcontrol-500"
                             >
-                                {loading ? 'Sending...' : 'Send message'}
+                                Send message
                             </button>
                         </div>
                     </div>
