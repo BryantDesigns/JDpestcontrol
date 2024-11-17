@@ -26,7 +26,7 @@ const services = [
 
 export default function ServicesSection() {
     return (
-        <div className="bg-white py-24 sm:py-32">
+        <div className="bg-gray-200 py-24 sm:py-32">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-2xl lg:text-center">
                     <h2 className="text-jdpestcontrol-500 text-base font-semibold leading-7">
@@ -56,15 +56,6 @@ export default function ServicesSection() {
                                 <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
                                     <p className="flex-auto">
                                         {service.description}
-                                    </p>
-                                    <p className="mt-6">
-                                        <a
-                                            href={service.href}
-                                            className="text-jdpestcontrol-500 text-sm font-semibold leading-6"
-                                        >
-                                            Learn more{' '}
-                                            <span aria-hidden="true">→</span>
-                                        </a>
                                     </p>
                                 </dd>
                             </div>

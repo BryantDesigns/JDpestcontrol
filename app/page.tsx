@@ -1,18 +1,22 @@
 import ServicesSection from '@/components/ServicesSection'
 import AboutUsSection from '@/components/AboutUsSection'
-import ContactSection from 'pages/components/ContactSection'
+import ContactSection from '@/components/ContactSection'
 
 export default function Home() {
     return (
         <main>
             {/* Services Section */}
-            <ServicesSection />
-
+            <section id="services">
+                <ServicesSection />
+            </section>
             {/* About Us Section */}
-            <AboutUsSection />
-
+            <section id="about">
+                <AboutUsSection />
+            </section>
             {/* Contact Section */}
-            <ContactSection />
+            <section id="contact">
+                <ContactSection />
+            </section>
         </main>
     )
 }

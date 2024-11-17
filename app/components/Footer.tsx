@@ -1,3 +1,5 @@
+import Image from 'next/image'
+import logo from '../../public/jd-logo.svg'
 import facebook from '../../public/facebook-new-2019-seeklogo-3.svg'
 import yelp from '../../public/yelp-seeklogo.svg'
 import nextdoor from '../../public/nextdoor-seeklogo-2.svg'
@@ -29,7 +31,16 @@ const navigation = [
 export default function Footer() {
     return (
         <footer className="bg-gray-100">
-            <div className="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
+            {/* Logo Container */}
+            <div className="flex justify-center px-6 py-6 md:justify-start">
+                <Image
+                    src={logo}
+                    alt="J&D Pest Control Logo"
+                    className="h-36 w-auto"
+                />
+            </div>
+
+            <div className="mx-auto max-w-7xl px-6 py-6 md:flex md:items-center md:justify-between lg:px-8">
                 <div className="flex justify-center gap-x-6 md:order-2">
                     {navigation.map((item) => (
                         <a
