@@ -144,7 +144,7 @@ export default function Navbar() {
                     <Image
                         alt=""
                         src={bannerImage}
-                        className="aspect-[3/2] object-cover lg:aspect-auto lg:size-full"
+                        className="object-fit: contain object-position: center object-cover lg:aspect-auto lg:size-full"
                         width={1587}
                         height={1057}
                     />
